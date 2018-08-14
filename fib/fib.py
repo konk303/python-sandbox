@@ -9,4 +9,4 @@ def fib(nth):
         return 1
     return fib(nth -2) + fib(nth - 1)
 
-for i in range(10): print('fib %s: %s' % (i, fib(i)))
+for i in range(10): print('fib {i}: {fib}'.format(i = i, fib = fib(i)))
